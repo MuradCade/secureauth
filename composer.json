@@ -1,11 +1,11 @@
 {
-  "name": "etech/secureauth",
+  "name": "muradcade/secureauth",
   "description": "SecureAuth is a lightweight PHP package designed to simplify common web application security and authentication tasks, including validation, CSRF protection, authentication, authorization, email sending, and “remember me” functionality.",
   "type": "library",
   "license": "MIT",
    "authors": [
     {
-      "name": "Muradcade",
+      "name": "Etech Online Academy",
       "email": "king12murad@gmail.com",
       "role": "Maintainer"
     }
