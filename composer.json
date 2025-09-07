@@ -1,0 +1,28 @@
+{
+  "name": "etech/secureauth",
+  "description": "SecureAuth is a lightweight PHP package designed to simplify common web application security and authentication tasks, including validation, CSRF protection, authentication, authorization, email sending, and “remember me” functionality.",
+  "type": "library",
+  "license": "MIT",
+   "authors": [
+    {
+      "name": "Muradcade",
+      "email": "king12murad@gmail.com",
+      "role": "Maintainer"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "phpmailer/phpmailer": "^6.10",
+    "illuminate/validation": "^12.28",
+    "illuminate/translation": "^12.28",
+    "illuminate/container": "^12.28"
+  },
+  "autoload": {
+    "psr-4": {
+      "SecureAuth\\": "src/"
+    }
+  },
+  "minimum-stability": "stable",
+  "keywords": ["authentication","authorization", "validation", "csrf", "email jobs", "rate-limit","rememberme token", "php"]
+  
+}
