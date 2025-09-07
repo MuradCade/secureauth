@@ -36,7 +36,7 @@ SecureAuth is a lightweight PHP package designed to simplify common web applicat
 Install via Composer:
 
 ```bash
-composer require etech/secureauth
+composer require muradcade/secureauth
 ```
 
 ## Validation
