@@ -36,11 +36,17 @@ class SessionHelper
 
     public static function flash(string $key, string $message): void
     {
+        if (session_status() !== PHP_SESSION_ACTIVE) {
+            session_start();
+        }
         $_SESSION['flash'][$key] = $message;
     }
 
     public static function getFlash(string $key): ?string
     {
+        if (session_status() !== PHP_SESSION_ACTIVE) {
+            session_start();
+        }
         if (isset($_SESSION['flash'][$key])) {
             $msg = $_SESSION['flash'][$key];
             unset($_SESSION['flash'][$key]);
