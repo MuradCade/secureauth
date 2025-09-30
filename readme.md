@@ -157,7 +157,7 @@ use SecureAuth\Jobs\WorkerJob;
 use SecureAuth\Jobs\EmailJob;
 
 $mailContent = [
-    'to' => 'recipient@example.com',
+    'recipient' => 'recipient@example.com',
     'subject' => 'Test Email',
     'body' => '<h1>Hello World</h1>',
     'attachment' => __DIR__ . '/files/test.txt' // optional
