@@ -26,6 +26,11 @@ class BaseRepository
         return $this;
     }
 
+
+    public function getuserid()
+    {
+        return $this->statement->insert_id;
+    }
     public function fetchAll()
     {
 
