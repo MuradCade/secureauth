@@ -9,7 +9,7 @@ use PHPMailer\PHPMailer\Exception;
 use SecureAuth\Jobs\JobInterface;
 
 //Load Composer's autoloader (created by composer, not included with PHPMailer)
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
 
 class EmailJob implements JobInterface
 {
