@@ -35,7 +35,7 @@ class EmailJob implements JobInterface
                 $configuration['MAIL']['PROJECT_NAME']
             );
             //Recipients
-            $mail->addAddress($payload['to'], '');
+            $mail->addAddress($payload['recipient'], '');
 
             //Content
             $mail->isHTML(true);
@@ -63,7 +63,7 @@ class EmailJob implements JobInterface
                 $configuration['MAIL']['PROJECT_NAME']
             );
             //Recipients
-            $mail->addAddress($payload['to'], '');
+            $mail->addAddress($payload['recipient'], '');
 
             $filePath = realpath($payload['attachment']);
             if (!$filePath) {
