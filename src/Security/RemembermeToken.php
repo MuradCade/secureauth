@@ -31,6 +31,11 @@ class RemembermeToken
         ]);
     }
 
+    public function getgeneratedtoken()
+    {
+        return $this->token;
+    }
+
     public function gettokencontent()
     {
         return isset($_COOKIE[$this->tokenName]);
